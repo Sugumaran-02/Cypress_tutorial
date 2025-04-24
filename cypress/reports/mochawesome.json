@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-04-18T14:05:20.037Z",
+    "end": "2025-04-18T14:05:29.662Z",
+    "duration": 9625,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "53ef82c9-dc05-41b5-a731-0552ccff6db9",
+      "title": "",
+      "fullFile": "cypress\\e2e\\swaglabs_pageobject.cy.js",
+      "file": "cypress\\e2e\\swaglabs_pageobject.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "eaf5b11b-f7e8-44a6-ac0f-dd4a6bb706c0",
+          "title": "Swaglabs_pageobject",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "pageobject",
+              "fullTitle": "Swaglabs_pageobject pageobject",
+              "timedOut": null,
+              "duration": 6913,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://www.saucedemo.com/\");\nvar swagpage_01 = new _swaglabs_page.default();\nswagpage_01.login(\"standard_user\", \"secret_sauce\");\ncy.wait(4000);\nconst productname = [\"Sauce Labs Backpack\", \"Sauce Labs Fleece Jacket\"];\nswagpage_01.add_cart(productname);",
+              "err": {},
+              "uuid": "b23b3b18-86ac-450f-91e2-d673f53a8d59",
+              "parentUUID": "eaf5b11b-f7e8-44a6-ac0f-dd4a6bb706c0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b23b3b18-86ac-450f-91e2-d673f53a8d59"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6913,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": true,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

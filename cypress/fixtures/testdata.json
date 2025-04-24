@@ -1,0 +1,17 @@
+[
+  {
+  "username": "standard_user",
+  "password": "secret_sauce",
+  "Verify_text": "Valid login"
+},
+{
+  "username": "locked_out_user",
+  "password": "admsecret_saucein",
+  "Verify_text": "Invalid login"
+},
+{
+  "username": "Admin",
+  "password": "secret_sauce",
+  "Verify_text": "Valid login"
+}
+]
