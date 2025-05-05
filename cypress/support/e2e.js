@@ -17,3 +17,14 @@
 import './commands'
 import 'cypress-xpath'
 import 'cypress-file-upload';
+
+
+Cypress.on('uncaught:exception', (err, runnable) => {
+    // if error message includes "adsbygoogle", ignore it
+    if (err.message.includes('adsbygoogle')) {
+      return false; // prevents Cypress from failing the test
+    }
+    
+    // Let all other errors fail the test
+    return true;
+  });

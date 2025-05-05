@@ -1,0 +1,44 @@
+{
+    "customers": [
+        {
+            "id": 1,
+            "username": "standard_user",
+            "password": "secret_sauce",
+            "Verify_text": "Valid login"
+        },
+        {
+            "id": 2,
+            "username": "performance_glitch_user",
+            "password": "secret_sauce",
+            "Verify_text": "Valid login"
+        }
+    ],
+    "admins": [
+        {
+            "id": 1,
+            "username": "problem_user", 
+            "password": "secret_sauce",
+            "Verify_text": "Valid login"
+        },
+        {
+            "id": 2,
+            "username": "error_user",
+            "password": "secret_sauce",
+            "Verify_text": "Valid login"
+        }
+    ],
+    "invalidUsers": [
+        {
+            "id": 1,
+            "username": "visual_user",
+            "password": "secret_sauce",
+            "Verify_text": "Valid login"
+        },
+        {
+            "id": 2,
+            "username": "locked_out_user",
+            "password": "secret_sauce",
+            "Verify_text": "Invalid login"
+        }
+    ]
+}

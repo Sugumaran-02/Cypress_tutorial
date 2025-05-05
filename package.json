@@ -9,10 +9,13 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "cypress": "^14.3.0"
+    "cypress": "^14.3.0",
+    "papaparse": "^5.5.2",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@4tw/cypress-drag-drop": "^2.3.0",
+    "@simonsmith/cypress-image-snapshot": "^9.1.0",
     "cypress-file-upload": "^5.0.8",
     "cypress-iframe": "^1.0.1",
     "cypress-xpath": "^2.0.1",

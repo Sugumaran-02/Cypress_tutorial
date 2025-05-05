@@ -1,0 +1,4 @@
+username,password,Verify_text
+standard_user,secret_sauce,Valid login
+locked_out_user,admsecret_saucein,Invalid login
+error_user,secret_sauce,Valid login

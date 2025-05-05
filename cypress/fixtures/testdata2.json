@@ -1,0 +1,22 @@
+{
+  "User1": {
+    "username": "standard_user",
+    "password": "secret_sauce",
+    "Verify_text": "Valid login"
+  },
+  "User2": {
+    "username": "locked_out_user",
+    "password": "admsecret_saucein",
+    "Verify_text": "Invalid login"
+  },
+  "User3": {
+    "username": "Admin",
+    "password": "secret_sauce",
+    "Verify_text": "Valid login"
+  },
+  "User4": {
+    "username": "Admin",
+    "password": "secret_sauce",
+    "Verify_text": "Valid login"
+  }
+}
