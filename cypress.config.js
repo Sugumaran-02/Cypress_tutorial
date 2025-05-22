@@ -5,10 +5,12 @@ const Papa = require('papaparse');
 const xlsx = require('xlsx')
 
 module.exports = defineConfig({
-  reporter: 'cypress-mochawesome-reporter',
-   reporterOptions: {
-    mochaFile: 'cypress/results/test-results-[hash].xml',
-    toConsole: true
+ reporter: 'cypress-mochawesome-reporter',
+  reporterOptions: {
+    reportDir: 'cypress/reports',
+    overwrite: false,
+    html: false,
+    json: true
   },
     e2e: {
     

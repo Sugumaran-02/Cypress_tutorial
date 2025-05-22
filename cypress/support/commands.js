@@ -27,6 +27,7 @@
 /// <reference types="cypress"  />
 /// <reference types="cypress-xpath"  />
 /// <reference types="cypress-file-upload"  />
+import 'cypress-mochawesome-reporter/register';
 
 Cypress.Commands.add('getIframe', (iframe) =>{
 

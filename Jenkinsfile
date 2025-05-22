@@ -22,6 +22,14 @@ pipeline {
       }
     }
 
+ stage('Run Cypress Tests') {
+      steps {
+        ansiColor('xterm') {
+          sh 'npx cypress run'
+        }
+      }
+    }
+  }
     stage('Run Cypress Tests') {
       steps {
         sh 'npx cypress run'
