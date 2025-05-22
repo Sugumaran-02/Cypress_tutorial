@@ -6,6 +6,10 @@ const xlsx = require('xlsx')
 
 module.exports = defineConfig({
   reporter: 'cypress-mochawesome-reporter',
+   reporterOptions: {
+    mochaFile: 'cypress/results/test-results-[hash].xml',
+    toConsole: true
+  },
   e2e: {
     
     "baseUrl": 'https://www.saucedemo.com',
