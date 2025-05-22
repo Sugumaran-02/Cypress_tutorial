@@ -10,7 +10,7 @@ module.exports = defineConfig({
     mochaFile: 'cypress/results/test-results-[hash].xml',
     toConsole: true
   },
-  e2e: {
+    e2e: {
     
     "baseUrl": 'https://www.saucedemo.com',
     "defaultCommandTimeout": 10000,
