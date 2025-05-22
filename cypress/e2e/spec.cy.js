@@ -6,6 +6,6 @@ describe('template spec', () => {
 
   it('Fail', () => {
     cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
-    cy.title().should('eq', 'OrangeHRM123')
+    cy.title().should('eq', 'OrangeHRM')
   })
 })

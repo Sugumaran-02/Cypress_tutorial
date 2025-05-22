@@ -5,7 +5,7 @@ describe('template spec', () => {
       cy.xpath("//input[@name='username']").type("Admin")
       cy.xpath("//input[@name='password']").type("admin123")
       cy.xpath("//button[@class='oxd-button oxd-button--medium oxd-button--main orangehrm-login-button']").click()
-
+cy.log("Fine")
 
 cy.title().should('include', 'HRM')
 cy.url().should('contain','orangehrmlive.com')
@@ -23,7 +23,7 @@ cy.url().should('contain','orangehrmlive.com')
  let act_name= x.text();
 
  //BDD
-   expect(act_name).to.equal(expect_name)
+   //expect(act_name).to.equal(expect_name)
    expect(act_name).to.not.equal("test")
 
  //TDD

@@ -13,7 +13,7 @@ cy.get('[ondblclick="myFunction1()"]').scrollIntoView().dblclick()
     it.only('Drag_drop', ()=>{
         cy.visit("https://testautomationpractice.blogspot.com/")
 
-cy.get('#draggable').drag('#droppable')
+cy.get('#draggable').drag('#droppable', {force: true})
 
     })
 

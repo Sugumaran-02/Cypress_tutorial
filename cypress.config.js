@@ -5,22 +5,24 @@ const Papa = require('papaparse');
 const xlsx = require('xlsx')
 
 module.exports = defineConfig({
+  reporter: 'cypress-mochawesome-reporter',
   e2e: {
+    
     "baseUrl": 'https://www.saucedemo.com',
     "defaultCommandTimeout": 10000,
     "experimentalSessionAndOrigin": true, // Important for session handling
-    "reporter": "mochawesome",
-    "reporterOptions": {
-      "mochaFile": 'cypress/reports/junit/results-[hash].xml',
-    "toConsole": true,
-      "reportDir": "cypress/reports",
-      "overwrite": true,
-      "html": true,
-      "json": true,
-      "charts": true
-    },
+    // "reporter": "mochawesome",
+    // "reporterOptions": {
+    //   "mochaFile": 'cypress/reports/junit/results-[hash].xml',
+    // "toConsole": true,
+    //   "reportDir": "cypress/reports",
+    //   "overwrite": true,
+    //   "html": true,
+    //   "json": true,
+    //   "charts": true
+    // },
     setupNodeEvents(on, config) {
-      
+      require('cypress-mochawesome-reporter/plugin')(on);
       // implement node event listeners here
       on('task', {
         checkFile({ filePath }) {

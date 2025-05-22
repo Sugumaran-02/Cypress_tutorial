@@ -17,7 +17,7 @@
 import './commands'
 import 'cypress-xpath'
 import 'cypress-file-upload';
-
+import 'cypress-mochawesome-reporter/register';
 
 Cypress.on('uncaught:exception', (err, runnable) => {
     // if error message includes "adsbygoogle", ignore it

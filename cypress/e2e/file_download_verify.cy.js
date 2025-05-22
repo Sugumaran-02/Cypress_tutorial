@@ -9,7 +9,7 @@ describe('Download file and verify', () => {
   
       cy.wait(5000); // wait for download (better to add dynamic waits later)
   
-      cy.task('checkFile', { filePath: 'C:/Users/sugum/Documents/Cypress_tutorial/cypress/downloads/sampleFile.jpeg' }).then((exists) => {
+      cy.task('checkFile', { filePath: 'D:/Cypress_Tutorial/cypress/downloads/sampleFile.jpeg'}).then((exists) => {
         expect(exists).to.be.true;
       });
       //cy.readFile('C:/Users/sugum/Documents/Cypress_tutorial/cypress/downloads/sampleFile.jpeg').should('exist')

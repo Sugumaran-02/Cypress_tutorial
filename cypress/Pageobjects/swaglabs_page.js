@@ -22,7 +22,7 @@ class swaglabs_page{
 
      if(name.trim()=== product){
 
-      cy.wrap($el).find('[class="btn btn_primary btn_small btn_inventory"]').click()
+      cy.wrap($el).find('[class="btn btn_primary btn_small btn_inventory "]').click()
      }
 
      })
