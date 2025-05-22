@@ -6,6 +6,7 @@ describe('template spec', () => {
       cy.xpath("//input[@name='password']").type("admin123")
       cy.xpath("//button[@class='oxd-button oxd-button--medium oxd-button--main orangehrm-login-button']").click()
 cy.log("Fine")
+cy.log("Fine")
 
 cy.title().should('include', 'HRM')
 cy.url().should('contain','orangehrmlive.com')
