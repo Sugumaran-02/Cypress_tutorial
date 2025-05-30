@@ -5,7 +5,7 @@ describe('Swaglabs_pageobject', ()=>{
 
     it('pageobject', ()=>{
 
-        cy.visit("https://www.saucedemo.com/")
+        cy.visit("/")
         var swagpage_01=new swagpage()
         swagpage_01.login("standard_user", "secret_sauce")
         cy.wait(4000)

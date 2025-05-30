@@ -13,6 +13,12 @@ module.exports = defineConfig({
     json: true
   },
     e2e: {
+
+      video:true,
+      screenshotOnRunFailure:true,
+      screenshotsFolder: 'cypress/screenshots',
+      videosFolder:'cypress/video',
+
     
     "baseUrl": 'https://www.saucedemo.com',
     "defaultCommandTimeout": 10000,

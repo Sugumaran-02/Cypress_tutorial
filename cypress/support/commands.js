@@ -80,3 +80,40 @@ Cypress.Commands.add('loginUI', () => {
       cacheAcrossSpecs: true
     });
   });
+
+
+
+  Cypress.Commands.add('loginByApi', () => {
+  cy.request({
+    method: 'POST',
+    url: 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/validate',
+    form: true,
+    body: {
+      username: 'Admin',
+      password: 'admin123',
+    },
+  }).then((response) => {
+    // The OrangeHRM site uses cookies for auth, so ensure the session is maintained
+    expect(response.status).to.eq(200);
+  });
+});
+
+Cypress.Commands.add('Login_cache',(username, password)=>{
+
+cy.session([username, password], ()=>{
+
+cy.visit("https://demoblaze.com/")
+cy.get('[class="nav-link"][id="login2"]').click()
+cy.get('[class="form-group"]>[id="loginusername"]').clear().type(username)
+cy.get('[class="form-group"]>[id="loginpassword"]').clear().type(password)
+cy.get('[onclick="logIn()"][class="btn btn-primary"]').click()
+cy.get('[id="logout2"]').should('be.visible')
+},
+{
+  cacheAcrossSpecs: true
+}
+
+)
+
+
+})
